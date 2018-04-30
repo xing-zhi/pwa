@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>pwa</title>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>PWA</h1>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
